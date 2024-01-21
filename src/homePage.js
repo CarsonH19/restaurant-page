@@ -1,19 +1,15 @@
+import { content } from "./index.js";
 
-export function loadPage() {
+export function loadHomePage() {
   // Header
   function loadHeader() {
     const element = document.createElement("header");
 
     element.innerHTML = `
+    <header>
       <h1>The Tavern</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Menu</a></li>
-          <li><a href="#services">Reservations</a></li>
-        </ul>
-      </nav>
-    `;
+    </header>   
+   `;
 
     return element;
   }
@@ -62,7 +58,7 @@ export function loadPage() {
     return element;
   }
 
-  document.body.appendChild(loadHeader());
-  document.body.appendChild(loadMain());
-  document.body.appendChild(loadFooter());
+  content.appendChild(loadHeader());
+  content.appendChild(loadMain());
+  content.appendChild(loadFooter());
 }

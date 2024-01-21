@@ -1,3 +1,8 @@
-import { loadPage } from "./pageLoad";
+import { loadHomePage } from "./homePage";
+import { loadNavBar } from "./navBar";
+import "./style.css";
 
-document.addEventListener('DOMContentLoaded', loadPage);
+export const content = document.getElementById("content");
+
+document.addEventListener("DOMContentLoaded", loadNavBar);
+document.addEventListener("DOMContentLoaded", loadHomePage);
