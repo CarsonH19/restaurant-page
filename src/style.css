@@ -1,9 +1,31 @@
 html, body {
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
+  background-color: black;
+  color: whitesmoke;
+  height: 100vh;
+  overflow: hidden;
 }
 
+#content {
+  height: 85vh;
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+
+
 a, a:visited, a:active {
+  height: 100%;
   color: whitesmoke;
   text-decoration: none;
 }
@@ -11,11 +33,10 @@ a, a:visited, a:active {
 a:hover {
   transition: 0.3s;
   scale: 1.2;
-  color: black;
 }
 
 nav {
-  width: 100%;
+  width: 100vw;
   background-color: black;
   color: white;
 
@@ -24,7 +45,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 10vw;
   list-style: none;
   margin: 0px;
@@ -36,7 +57,8 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  padding: 5px;
+  height: 20px;
   width: 120px;
   border-top: 1px solid whitesmoke;
   border-left: 1px solid whitesmoke;
@@ -44,11 +66,67 @@ nav ul li {
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-top: 5px;
+  margin: 0px;
 }
 
-nav ul li:hover {
-  transition: 0.3s;
-  color: black;
+.tab-open {
   background-color: whitesmoke;
 }
+
+.tab-open a {
+  color: black;
+}
+
+/*
+=============== 
+Home
+===============
+*/
+
+div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+h1 {
+  font-size: 15vh;
+  text-align: center;
+}
+
+p {
+  font-size: 3vh;
+  text-align: center;
+}
+
+/*
+=============== 
+Menu
+===============
+*/
+
+/*
+=============== 
+Reservations
+===============
+*/
+
+
+/*
+=============== 
+Footer
+===============
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+
